@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gender Pay Gap by Job Title</title>
+    <style>
+      body {
+        background-color: #f7e0e3;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        border-radius: 10px;
+      }
+      h1 {
+        color: #ff0066;
+        text-align: center;
+        text-decoration: underline;
+        margin-top: 30px;
+      }
+      p1 {
+        font-size: 120%;
+        font-weight: bold;
+        color: #333;
+        text-align: justify;
+      }
+      p2 {
+        font-size: 130%;
+        color: #8b008b;
+        text-align: center;
+      }
+      .dataset-link {
+        display: block;
+        text-align: center;
+        margin-top: 15px;
+        color: #0066cc;
+        text-decoration: none;
+      }
+      .dataset-link:hover {
+        text-decoration: underline;
+      }
+      .show-button {
+        font-size: 110%;
+        padding: 12px 30px;
+        margin: 0 auto;
+        display: block;
+        background-color: #ff0066;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      .show-button:hover {
+        background-color: #cc0052;
+      }
+      .graph-container {
+        text-align: center;
+        margin-top: 30px;
+      }
+      .graph-img {
+        max-width: 100%;
+        border: 2px solid #ff0066;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        display: none; /* Hide the graphical model by default */
+      }
+      .quote-container {
+        text-align: center;
+        margin-top: 40px;
+      }
+      .quote {
+        font-style: italic;
+        font-size: 120%;
+        color: #6a4f8d;
+      }
+      .quote-author {
+        font-weight: bold;
+        color: #6a4f8d;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Statistical Evaluation of Gender Pay Gap by Job Title</h1>
+      <p1
+        >Hey visitors!!<br /><br />
+        As you all know, "Statistical Evaluation of Gender Pay Gap by Job Title"
+        alludes to an exploration or examination led to look at and comprehend
+        the distinctions in pay among people across various work titles or
+        positions inside a specific association, industry, or the whole labor
+        force. The assessment includes utilizing statistical strategies to
+        gather and analyze pertinent information connected with compensations or
+        wages acquired by people of various sexes in different work jobs.</p1
+      >
+      <br /><br />
+      <p1
+        >Given below is a dataset file that focuses on gender-based income for
+        various job titles. As there have been many examinations exhibiting that
+        ladies are paid less than people for the same work titles, this
+        informational index will be useful in distinguishing the depth of the
+        orientation-based pay gap.</p1
+      >
+      <br />
+      <br />
+      <a href="data.csv" target="_blank" class="dataset-link">Open Data.csv</a>
+      <br /><br />
+      <p2
+        >Wouldn't it be better if we could understand this data through
+        graphs??<br />So what are you waiting for... let's get you into the
+        world of Statistics!! ^^</p2
+      >
+      <br /><br />
+      <button class="show-button" onclick="toggleImage()">
+        Show Graphical Model</button
+      ><br /><br />
+      <div class="graph-container" id="imageContainer">
+        <img
+          id="graphicalModel"
+          src="./plot.png"
+          alt="Gender Pay Gap by Job Title"
+          class="graph-img"
+        />
+      </div>
+
+      <div class="quote-container">
+        <p class="quote">
+          "Gender equality is not a woman's issue; it is a human issue. It
+          affects us all."
+        </p>
+        <p class="quote-author">- Emma Watson</p>
+      </div>
+    </div>
+
+    <script>
+      function toggleImage() {
+        var img = document.getElementById("graphicalModel");
+        var container = document.getElementById("imageContainer");
+        if (img.style.display === "none") {
+          img.style.display = "block";
+          container.style.display = "block";
+        } else {
+          img.style.display = "none";
+          container.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+/* Additional CSS for the Gender Pay Gap Calculator */
+
+body {
+  background-color: rgb(211, 196, 208);
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  color: rgb(134, 2, 120);
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 18px;
+  color: #333;
+}
+
+select,
+input {
+  font-size: 16px;
+  padding: 8px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+button {
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: #ff4081;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #f50057;
+}
+
+#result {
+  font-size: 24px;
+  color: #333;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* Super Exciting CSS for Quotes */
+#excitingQuotes {
+  margin-top: 50px;
+  border-top: 3px solid #ff4081;
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.quote {
+  background-color: rgb(134, 2, 120);
+  color: #fff;
+  font-size: 18px;
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin: 10px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive CSS */
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  .quote {
+    width: 80%;
+  }
+}

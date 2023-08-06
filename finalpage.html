@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Navigation</title>
+  <style>
+    body {
+      background-color: rgb(211, 196, 208);
+    }
+
+    .navbar {
+      background-color: rgb(249, 245, 245);
+      width: 1500px;
+    }
+
+    .navbar ul {
+      overflow: auto;
+    }
+
+    .navbar li {
+      float: right;
+      list-style: none;
+      padding: 3px 3px;
+      margin: 13 20px;
+    }
+
+    .navbar li a {
+      padding: 3px 3px;
+      text-decoration: none;
+    }
+
+    .navbar input {
+      border: 2px solid rgb(134, 2, 120);
+      border-radius: 4px;
+      padding: 3px 17px;
+      width: 129px;
+      margin: auto;
+    }
+
+    #main-heading {
+      font-size: 40px;
+      font-weight: normal;
+      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      color: rgb(143, 5, 111);
+      text-align: left;
+      margin-top: 150px;
+      margin-left: 50px;
+      margin-bottom: 2px;
+    }
+
+    #para {
+      margin-left: 50px;
+      margin-top: 0px;
+      font-size: 15px;
+      font-style: italic;
+      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      color: rgb(137, 9, 131);
+    }
+
+
+    #team-link {
+      font-size: 20px;
+      margin-left: 10px;
+      color:blue;
+    }
+
+    #about-link {
+      font-size: 20px;
+      margin-left: 10px;
+      color:blue;
+    }
+
+    #home-link {
+      font-size: 20px;
+      margin-left: 10px;
+      color:blue;
+    }
+
+    #Case-link {
+      font-size: 20px;
+      margin-left: 10px;
+      color:blue;
+    }
+
+    #Login-link {
+      font-size: 20px;
+      margin-left: 10px;
+      color:blue;
+    }
+
+    #stats-link {
+      font-size: 20px;
+      margin-left: 10px;
+    }
+
+    #suggestion-link {
+      font-size: 20px;
+      margin-left: 10px;
+    }
+
+    #calculator-link {
+      font-size: 20px;
+      margin-left: 10px;
+    }
+
+    #instagram-link {
+      font-size: 20px;
+      margin-left: 10px;
+      color:blue;
+    }
+
+    #facebook-link {
+      font-size: 20px;
+      margin-left: 10px;
+      color:blue;
+    }
+    .content-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Update the main heading and paragraph styles */
+  #main-heading {
+    font-size: 48px;
+    font-weight: bold;
+    font-family: "Arial", sans-serif;
+    color: rgb(143, 5, 111);
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  #para {
+    margin-top: 10px;
+    font-size: 18px;
+    font-style: italic;
+    font-family: "Arial", sans-serif;
+    color: rgb(137, 9, 131);
+    text-align: center;
+  }
+
+  /* Update the image styling */
+  .img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 30px auto; /* Center the image horizontally */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  </style>
+</head>
+
+<body>
+  <header>
+      
+    </div>
+    <nav class="navbar">
+      <ul>
+				<li><a href="login2.html" id="Login-link">Login Form</a></li>
+        <li>
+          <a href="https://www.instagram.com/gender_pay_gap_analyzer" id="instagram-link">Instagram</a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/profile.php?id=100095246152308" id="facebook-link">Facebook</a>
+        </li>
+        <li><a href="case.html" id="Case-link">Case Study</a></li>
+        
+        <li><a href="database.html" id="home-link">Data-insights</a></li>
+        <li><a href="index.html" id="stats-link">Statistics</a></li>
+        <li><a href="calculate.html" id="calculator-link">Calculator</a></li>
+        <li>
+          <a href="suggestions.html" id="suggestion-link">Guidelines</a>
+        </li>
+        <li><a href="#" id="team-link">Team</a></li>
+        <li><a href="#" id="about-link">About</a></li>
+        <li><a href="#" id="home-link">Home</a></li>
+      </ul>
+    </nav>
+    <div class="content-container">
+      <h1 id="main-heading">Gender Pay Gap Analyzer</h1>
+      <p id="para">
+        Empowering change and equality<br />
+        Together we can bridge the gap
+      </p>
+    <img src="https://i.pinimg.com/564x/57/27/93/572793018fc0ea45b269d69bf04f3c85.jpg" class="img" />
+  </header>
+  <script>
+    // Function to change the color of the clicked link and reset other links to the default color
+    function changeColor(linkId) {
+      const links = document.querySelectorAll(".navbar li a");
+      links.forEach((link) => {
+        if (link.id === linkId) {
+          link.style.color = "blue"; // Change the color to your desired color
+        } else {
+          link.style.color = ""; // Reset to the default color (or you can specify another color)
+        }
+      });
+    }
+
+    // Add click event listeners to each link
+    document
+      .getElementById("contact-link")
+      .addEventListener("click", function () {
+        changeColor("contact-link");
+      });
+    document
+      .getElementById("team-link")
+      .addEventListener("click", function () {
+        changeColor("team-link");
+      });
+    document
+      .getElementById("about-link")
+      .addEventListener("click", function () {
+        changeColor("about-link");
+      });
+    document
+      .getElementById("home-link")
+      .addEventListener("click", function () {
+        changeColor("home-link");
+      });
+  </script>
+</body>
+
+</html>
